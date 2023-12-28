@@ -1,0 +1,383 @@
+/* 
+fondo #F5F5F5
+botones y enlaces #FF4081
+texto y contenido #333333
+detalles y acentos #FF80AB
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;0,800;1,400&family=Montserrat:ital,wght@0,300;0,400;1,400;1,700&display=swap');
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #F5F5F5;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* !estilos para la cabecera */
+header {
+  background-color: #F5F5F5;
+  color: #FF4081;;
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1em;
+}
+
+.logo {
+  font-size: 1.5em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 3em;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  border-bottom: 2px solid #FF4081;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  margin-left: 10px;
+}
+
+.social-icons a i {
+  width: 30px;
+  height: 30px;
+  color: #333;
+}
+
+.social-icons a i:hover{
+  color: #FF4081;
+}
+
+/* !Estilos para la sección de hero image */
+.hero {
+  height: 100vh;
+  background-image: url('/portfolio2/assets/inicio.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero p {
+  font-size: 4em;
+  color: #333;
+  font-weight: bold;
+}
+
+.hero p span{
+  color: #FF4081;
+}
+
+/*  !estilos para boton de hamburguesa */
+.burger i {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+/* !estilos para el boton de descarga cv */
+.btn-1{
+  padding: 0 10px;
+  margin: 40px;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #FF4081;
+  color: #FFF2F9;
+  border: medium solid #FF4081;
+  height: 60px;
+  width: 200px;
+  border-radius: 50px;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.btn-1:hover{
+  transform: scale(1.1);
+}
+
+/* !estilos para la seccion sobre mi */
+h2{
+  padding: 100px 0 0 0;
+  color: #FF4081;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+}
+
+.container-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto; 
+}
+
+.content {
+  width: 50%; /* Ancho del contenido */
+  margin: 0 auto; /* Centrar horizontalmente */
+  text-align: center; /* Centrar el texto */
+  font-size: 20px;
+}
+
+.span-text-p{
+  color: #696969;
+  font-weight: bold;
+}
+
+.container-grid img{
+  width: auto;
+  height: 50vh;
+}
+
+
+
+/* !estilos para la seccion habilidades */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 50px; /* Espaciado entre secciones */
+  width: 700px;
+}
+
+.icon-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px; /* Espaciado entre icono y párrafo */
+}
+
+.icon-section i {
+  font-size: 4rem; /* Tamaño del icono */
+  border-radius: 50%;
+  background-color: #FF4081;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+
+.icon-section p{
+  font-weight: bold;
+}
+
+/* !estilos para los carret */
+.carret{
+  display: flex;
+  justify-content: center;
+}
+
+.carret i{
+  margin: 15px;
+  color: #FF4081;
+  
+}
+
+.fa-caret-down{
+  color: #A3ADBA;
+}
+
+/* !estilos para la seccion de trabajos */
+.trabajos{
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px; 
+  
+}
+
+.trabajos h2{
+  text-align: center;
+}
+
+.trabajos nav{
+  text-align: center;
+  margin: 30px 0;
+}
+
+.trabajos nav a{
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 20px;
+  color: #000;
+  font-weight: bold;
+  padding: 3px 10px;
+  border: 3px solid transparent;
+}
+
+.trabajos nav a:hover{
+  border: 3px solid #ff4081;
+}
+
+/* esta clase se agregara dinamicamente cuando haya seleccionada una opcion */
+.borde{
+  border: 3px solid #ff4081 !important;
+}
+
+.trabajos .galeria .item img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.trabajos .galeria{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 30px;
+}
+
+.trabajos .galeria .item{
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #8d8d8d;
+  border-radius: 10px;
+}
+
+.trabajos .galeria .item .info{
+  position: absolute;
+  top: -100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  opacity: 0;
+  transition: .3s;
+}
+.trabajos .galeria .item .info h3{
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.trabajos .galeria .item .info span{
+  color: #8d8d8d;
+  display: inline-block;
+  border: 2px solid #8d8d8d;
+  margin: 0 3px;
+  padding: 0 5px;
+}
+
+.trabajos .galeria .item .info a{
+  display: block;
+  margin: 20px;
+  text-decoration: none;
+  color: #ff4081;
+  font-weight: bold;
+}
+
+.trabajos .galeria .item:hover .info{
+  opacity: 1;
+  top: 0;
+}
+
+/* !estilos para la seccion de contacto */
+.contacto{
+  background-image: url("assets/cafe.jpg");
+  background-size: cover;
+  color: #ff4081;
+  font-weight: bold;
+  margin-top: 100px;
+  padding: 80px 20px;
+}
+
+.contacto .contenedor-contacto{
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contacto h2{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.contacto .contenedor-contacto .fila{
+  display: flex;
+}
+
+.contacto .contenedor-contacto .fila .col{
+  width: 50%;
+}
+
+.contacto .contenedor-contacto .info{
+  margin-bottom: 30px;
+  border-left: 3px solid #ff80ab;
+  padding-left: 8px;
+}
+
+.contacto .contenedor-contacto .info p{
+  color: #fff;
+}
+
+.contacto input, .contacto textarea{
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid #8d8d8d;
+  margin-bottom: 20px;
+  outline: none;
+  color: #ff4081;
+}
+
+.contacto .btn{
+  background-color: none;
+  padding: 5px 40px;
+  border: 2px solid; 
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(to right, #ff4081, #ff80ab);
+}
+
+footer{
+  background-color: transparent;
+  color: #ff4081;
+  padding: 7px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+/* !seccion responsive */
