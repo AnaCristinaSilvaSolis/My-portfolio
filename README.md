@@ -1,10 +1,4 @@
 # My-portfolio
-<style>
-  b{
-    color: red;
-    font-weight: bold;
-  }
-</style>
 
-<b>Reminder:</b> estoy trabajando en el responsive del sitio.
+## Estoy trabajando en la parte responsive del proyecto
 
