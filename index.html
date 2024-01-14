@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Portfolio Ana</title>
+</head>
+<body>
+  <section id="inicio">
+    <div class="contenido">
+      <header>
+        <div class="contenido-header">
+          <h1>ANA</h1>
+          <nav id="nav" class="">
+            <ul id="links">
+              <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+              <li><a href="#sobre-mi" onclick="seleccionar(this)">SOBRE MI</a></li>
+              <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+              <li><a href="#proyectos" onclick="seleccionar(this)">PROYECTOS</a></li>
+              <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+            </ul>
+          </nav>
+          
+          <!-- icono menu responsivo -->
+          <div id="icono-nav" onclick="responsiveMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+          <!-- redes -->
+          <div class="redes">
+            <a href="https://github.com/AnaCristinaSilvaSolis" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/anacristinasilvasolis/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </header>
+
+      <div class="presentacion">
+        <p class="bienvedida">Hi there!</p>
+        <h2>Soy <span>Ana Silva</span>, Desarrolladora de software</h2>
+        <p class="descripcion">Apasionada por el autoaprendizaje y adicta a leer novelas en digital.</p>
+        <a href="#proyectos">Ir al Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre-mi">
+    <div class="contenedor-foto">
+      <img src="assets/con-fltro.png" alt="">
+    </div>
+
+    <div class="sobre-mi">
+      <p class="titulo-seccion">Sobre mi</p>
+      <h2>Hola, soy <span>Ana Silva</span></h2>
+      <h3>Desarrolladora de software</h3>
+      <p>Soy de Cali, Valle del Cauca - Colombia. Tengo 21 años y disfruto estar constantemente aprendiendo sobre ello, también como no todo es estudio, disfruto leer novelas y artículos médicos. </p>
+      <a href="documents/Ana Cristina Silva Solis- CV dev.pdf" download="cv-Ana-Solis.pdf">Descargar CV</a>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+    <div class="fila">
+      <div class="servicio">
+        <span class="icono"><i class="fa-solid fa-code"></i></span>
+        <h4>Sitios web</h4>
+        <hr>
+        <ul class="servicios-tag">
+          <li>Traducciones</li>
+          <li>SEO</li>
+          <li>Rediseño</li>
+        </ul>
+        <p>Sitios web y blogs responsivos y con el SEO adecuado para los motores de busqueda, y si ya tienes tu sitio web, hago mantenimiento del mismo.</p>
+      </div>
+
+      <div class="servicio">
+        <span class="icono"><i class="fa-solid fa-code"></i></span>
+        <h4>Desarrollo de sistemas</h4>
+        <hr>
+        <ul class="servicios-tag">
+          <li>MySQL</li>
+          <li>PHP</li>
+          <li>JavaScript</li>
+        </ul>
+        <p>Sistemas completos para tu negocio: farmacia, barbería, estética, consultorio, entre otras categorías.</p>
+      </div>
+
+      <div class="servicio">
+        <span class="icono"><i class="fa-solid fa-code"></i></span>
+        <h4>Ecommerce</h4>
+        <hr>
+        <ul class="servicios-tag">
+          <li>Actualizaciones</li>
+          <li>SEO</li>
+          <li>Rediseño</li>
+        </ul>
+        <p>Creo tu Ecommerce como lo desees, actualizo, rediseño y le hago mantenimiento al que ya tienes.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="contenedor-skills" id="skills">
+    <h3>HABILIDADES</h3>
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>Html & Css</p>
+        <span class="porcentaje">Adquirida</span>
+      </div>
+      <div class="barra">
+        <div id="html" class=""></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>Base de datos</p>
+        <span class="porcentaje">Adquirida</span>
+      </div>
+      <div class="barra">
+        <div id="bd" class=""></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>Git & GitHub</p>
+        <span class="porcentaje">Adquirida</span>
+      </div>
+      <div class="barra">
+        <div id="git" class=""></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>JavaScript</p>
+        <span class="porcentaje">Estudiando</span>
+      </div>
+      <div class="barra">
+        <div id="js" class=""></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span>PHP</p>
+        <span class="porcentaje">Estudiando</span>
+      </div>
+      <div class="barra">
+        <div id="php" class=""></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="proyectos">
+    <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+    <div class="fila">
+      <div class="proyecto">
+        <div class="overlay">
+          <img src="assets/proximamente.png" alt="">
+          <div class="info">
+            <h4>Blog personal</h4>
+            <p>HTML | CSS | JavaScript</p>
+            <a href="#">Ver aquí</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <div class="overlay">
+          <img src="assets/proximamente.png" alt="">
+          <div class="info">
+            <h4>Software para una barbería</h4>
+            <p>HTML | CSS | JavaScript | PHP | MYSQL</p>
+            <a href="#">Ver aquí</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <div class="overlay">
+          <img src="assets/proximamente.png" alt="">
+          <div class="info">
+            <h4>Software para una panadería</h4>
+            <p>HTML | CSS | JavaScript | PHP | MYSQL</p>
+            <a href="#">Ver aquí</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fila">
+      <div class="proyecto">
+        <div class="overlay">
+          <img src="assets/proximamente.png" alt="">
+          <div class="info">
+            <h4>Sitio web para una psicóloga</h4>
+            <p>HTML | CSS | JavaScript</p>
+            <a href="#">Ver aquí</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <div class="overlay">
+          <img src="assets/proximamente.png" alt="">
+          <div class="info">
+            <h4>Ecommerce</h4>
+            <p>HTML | CSS | JavaScript</p>
+            <a href="#">Ver aquí</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <div class="overlay">
+          <img src="assets/proximamente.png" alt="">
+          <div class="info">
+            <h4>Software para un Ecommerce</h4>
+            <p>HTML | CSS | JavaScript | PHP | MYSQL</p>
+            <a href="#">Ver aquí</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h3 class="titulo-seccion">Contáctame ahora</h3>
+    <div class="contenedor-form">
+      <form action="https://formsubmit.co/cristinasilvasolis09@gmail.com" method="POST">
+        <div class="fila mitad">
+          <input type="text" placeholder="Nombre completo" class="input-mitad" name="nombre">
+          <input type="text" placeholder="Correo electrónico" class="input-mitad" name="correo">
+        </div>
+        <div class="fila">
+          <input type="text" placeholder="Ciudad de donde me contactas" class="input-full" name="ciudad">
+        </div>
+        <div class="fila">
+          <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Tu mensaje" class="input-full"></textarea>
+        </div>
+
+        <input type="submit" value="Enviar mensaje" class="btn-enviar" name="submit">
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>2024</p>
+    <div class="redes">
+      <a href="https://github.com/AnaCristinaSilvaSolis" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/anacristinasilvasolis/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
