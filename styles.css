@@ -359,6 +359,34 @@ html{
   animation: progreso5 2s forwards;
 }
 
+.contenedor-skills .skill .barra .barra-progreso6{
+  background-color: var(--color-text-white);
+  width: 2%;
+  height: 6px;
+  animation: progreso6 2s forwards;
+}
+
+.contenedor-skills .skill .barra .barra-progreso7{
+  background-color: var(--color-text-white);
+  width: 10%;
+  height: 6px;
+  animation: progreso7 2s forwards;
+}
+
+.contenedor-skills .skill .barra .barra-progreso8{
+  background-color: var(--color-text-white);
+  width: 2%;
+  height: 6px;
+  animation: progreso8 2s forwards;
+}
+
+.contenedor-skills .skill .barra .barra-progreso9{
+  background-color: var(--color-text-white);
+  width: 2%;
+  height: 6px;
+  animation: progreso9 2s forwards;
+}
+
 /* animaciones de barras */
 @keyframes progreso1{
   0%{
@@ -405,6 +433,41 @@ html{
   }
 }
 
+@keyframes progreso6{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 2%;
+  }
+}
+
+@keyframes progreso7{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 10%;
+  }
+}
+
+@keyframes progreso8{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 2%;
+  }
+}
+
+@keyframes progreso9{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 2%;
+  }
+}
 /* !PROYECTOS */
 #proyectos{
   max-width: 1100px;

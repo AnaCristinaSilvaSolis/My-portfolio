@@ -37,6 +37,10 @@ function efectoHabilidades(){
     document.getElementById("bd").classList.add("barra-progreso2");
     document.getElementById("git").classList.add("barra-progreso3");
     document.getElementById("js").classList.add("barra-progreso4");
-    document.getElementById("php").classList.add("barra-progreso5");
+    document.getElementById("react").classList.add("barra-progreso5");
+    document.getElementById("angular").classList.add("barra-progreso6");
+    document.getElementById("sql").classList.add("barra-progreso7");
+    document.getElementById("php").classList.add("barra-progreso8");
+    document.getElementById("laravel").classList.add("barra-progreso9");
   }
 }
