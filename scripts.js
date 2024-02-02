@@ -40,7 +40,7 @@ function efectoHabilidades(){
     document.getElementById("react").classList.add("barra-progreso5");
     document.getElementById("angular").classList.add("barra-progreso6");
     document.getElementById("sql").classList.add("barra-progreso7");
-    document.getElementById("php").classList.add("barra-progreso8");
-    document.getElementById("laravel").classList.add("barra-progreso9");
+    document.getElementById("java").classList.add("barra-progreso8");
+    document.getElementById("spring").classList.add("barra-progreso9");
   }
 }
